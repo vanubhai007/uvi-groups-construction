@@ -1,6 +1,130 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+
+
+
+/* ===== Mobile Responsive Fix ===== */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===== Mobile Fix ===== */
+
+@media (max-width: 768px) {
+
+  .top-bar {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .top-bar .logo {
+    text-align: center;
+  }
+
+  .top-bar .logo h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .top-bar .top-bar-item {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-bar .navbar {
+    padding: 10px;
+  }
+
+  .carousel {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .carousel .carousel-caption {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .carousel .carousel-caption h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .carousel .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .carousel .carousel-caption .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+  }
+
+  .about .about-img,
+  .about .about-text {
+    width: 100%;
+  }
+
+  .contact .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact .contact-text {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+}
+
+/* ===== Small Mobile Fix ===== */
+
+@media (max-width: 576px) {
+
+  .carousel .carousel-caption h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .carousel .carousel-caption p {
+    font-size: 14px;
+  }
+
+  .top-bar .logo h1 {
+    font-size: 28px;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+
 body {
     color: #666666;
     background: #dddddd;
